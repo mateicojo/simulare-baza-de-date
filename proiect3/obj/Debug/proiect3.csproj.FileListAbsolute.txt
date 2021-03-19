@@ -1,0 +1,11 @@
+C:\Users\mok_a\source\repos\proiect3\proiect3\bin\Debug\proiect3.exe.config
+C:\Users\mok_a\source\repos\proiect3\proiect3\bin\Debug\proiect3.exe
+C:\Users\mok_a\source\repos\proiect3\proiect3\bin\Debug\proiect3.pdb
+C:\Users\mok_a\source\repos\proiect3\proiect3\obj\Debug\proiect3.csprojAssemblyReference.cache
+C:\Users\mok_a\source\repos\proiect3\proiect3\obj\Debug\proiect3.Form1.resources
+C:\Users\mok_a\source\repos\proiect3\proiect3\obj\Debug\proiect3.Properties.Resources.resources
+C:\Users\mok_a\source\repos\proiect3\proiect3\obj\Debug\proiect3.csproj.GenerateResource.cache
+C:\Users\mok_a\source\repos\proiect3\proiect3\obj\Debug\proiect3.csproj.CoreCompileInputs.cache
+C:\Users\mok_a\source\repos\proiect3\proiect3\obj\Debug\proiect3.exe
+C:\Users\mok_a\source\repos\proiect3\proiect3\obj\Debug\proiect3.pdb
+C:\Users\mok_a\source\repos\proiect3\proiect3\obj\Debug\proiect3.Form2.resources
