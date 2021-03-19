@@ -32,6 +32,9 @@ namespace proiect3
         }
 
         private void citireDinFisier()//FIXME: tipul primeste si un \n
+            //
+            //Apeleaza mereu la operatii pe vector de cheltuieli(updateaza datele)
+            //
         {
             string readText = File.ReadAllText("C:/Users/mok_a/source/repos/proiect3/proiect3/bazaDeDate.txt");
             this.curataStruct();
@@ -43,7 +46,6 @@ namespace proiect3
                 cheltuieli[i].ziua = Int32.Parse(temp[0]);
                 cheltuieli[i].luna = Int32.Parse(temp[1]);
                 cheltuieli[i].suma = Int32.Parse(temp[2]);
-                
                 cheltuieli[i].tip = temp[3].Trim(new char[] {'\n',' '});
                 nrCheltuieli++;
             }
@@ -84,6 +86,8 @@ namespace proiect3
             {
                 Console.WriteLine((i + 1) + " " + cheltuieli[i].ziua + " " + cheltuieli[i].luna + " " + cheltuieli[i].suma + " " + cheltuieli[i].tip);
             }
+
+
         }
     }
 }
