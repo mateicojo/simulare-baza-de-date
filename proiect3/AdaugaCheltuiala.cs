@@ -12,13 +12,13 @@ using System.IO;
 
 namespace proiect3
 {
-    public partial class Form2 : Form
+    public partial class AdaugaCheltuiala : Form
     {
         public static string ziua = "";
         public static string luna = "";
         public static string suma = "";
         public static string tip = "";
-        public Form2()
+        public AdaugaCheltuiala()
         {
             InitializeComponent();
         }
@@ -53,11 +53,13 @@ namespace proiect3
                     outputFile.WriteLine(ziua + "," + luna + "," + suma + "," + tip);
                 }
                 Console.WriteLine("Datele au fost introduse!");//pop up
+                System.Windows.Forms.MessageBox.Show("Datele au fost introduse!");
                 this.Close();
             }
             else
             {
                 Console.WriteLine("Eroare: Datele sunt invalide!");//pop up
+                System.Windows.Forms.MessageBox.Show("Datele sunt invalide!");
                 textBox1.Text = "";
                 textBox2.Text = "";
                 textBox3.Text = "";
