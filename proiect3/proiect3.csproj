@@ -84,6 +84,12 @@
     <Compile Include="TableForm2.Designer.cs">
       <DependentUpon>TableForm2.cs</DependentUpon>
     </Compile>
+    <Compile Include="TableForm3.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TableForm3.Designer.cs">
+      <DependentUpon>TableForm3.cs</DependentUpon>
+    </Compile>
     <Compile Include="Validator.cs" />
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
@@ -111,6 +117,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="TableForm2.resx">
       <DependentUpon>TableForm2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TableForm3.resx">
+      <DependentUpon>TableForm3.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>

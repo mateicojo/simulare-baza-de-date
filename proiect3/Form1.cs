@@ -37,15 +37,13 @@ namespace proiect3
             File.WriteAllText("C:/Users/mok_a/source/repos/proiect3/proiect3/bazaDeDate.txt", String.Empty);
         }
 
-        private void scriereInFisier()
+        public void scriereInFisier()
         //TODO: functie de curatare fisierul bazaDeDate.txt si scrierea datelor din struct despartite prin "\n" + ", " dupa fiecare element;
         {
-            citireDinFisier();//updateaza din nou struct ul just to be sure;
-            curataFisier(); //dezactivat pana se rezolva ca sa nu stearga textul din fisier fara sa scrie nimic
+            File.WriteAllText("C:/Users/mok_a/source/repos/proiect3/proiect3/bazaDeDate.txt", String.Empty);
             StreamWriter sw = new StreamWriter("C:/Users/mok_a/source/repos/proiect3/proiect3/bazaDeDate.txt");
             for (int i = 0; i < nrCheltuieli; i++)
             {
-                //aici apare eroarea;
                 sw.WriteLine($"{cheltuieli[i].ziua},{cheltuieli[i].luna},{cheltuieli[i].suma},{cheltuieli[i].tip}");
             }
             sw.Close();
@@ -110,9 +108,11 @@ namespace proiect3
             tf.ShowDialog();
         }
 
-        private void button3_Click(object sender, EventArgs e)//afisarea facturilor
+        private void button3_Click(object sender, EventArgs e)//afisarea facturilor SOLVED
         {
-
+            citireDinFisier();
+            TableForm2 tf2 = new TableForm2(cheltuieli, nrCheltuieli);
+            tf2.ShowDialog();
         }
 
         private void button4_Click(object sender, EventArgs e)//4 ordonarea
@@ -138,11 +138,12 @@ namespace proiect3
                         }
                 }
             }
-            scriereInFisier();
+
             for (int i = 0; i < nrCheltuieli; i++)//afisare in consola
             {
                 Console.WriteLine((i + 1) + " " + cheltuieli[i].ziua + " " + cheltuieli[i].luna + " " + cheltuieli[i].suma + " " + cheltuieli[i].tip);
             }
+            scriereInFisier();//fixme: datele sunt ordonate in struct dar scrierea nu functioneaza cum trebuie
             System.Windows.Forms.MessageBox.Show("Datele au fost sortate!");
         }
 
@@ -170,6 +171,13 @@ namespace proiect3
                 suma += cheltuieli[i].suma;
             }
             System.Windows.Forms.MessageBox.Show($"S-au efectuat cheltuieli in valoare de {suma} lei");
+        }
+
+        private void button9_Click(object sender, EventArgs e)
+        {
+            citireDinFisier();
+            TableForm3 tf = new TableForm3(cheltuieli,nrCheltuieli);
+            tf.ShowDialog();
         }
     }
 }

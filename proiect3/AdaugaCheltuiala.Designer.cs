@@ -29,6 +29,7 @@ namespace proiect3
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(AdaugaCheltuiala));
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.textBox2 = new System.Windows.Forms.TextBox();
             this.textBox3 = new System.Windows.Forms.TextBox();
@@ -115,7 +116,7 @@ namespace proiect3
             this.label4.TabIndex = 8;
             this.label4.Text = "tip:";
             // 
-            // Form2
+            // AdaugaCheltuiala
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -129,7 +130,8 @@ namespace proiect3
             this.Controls.Add(this.textBox3);
             this.Controls.Add(this.textBox2);
             this.Controls.Add(this.textBox1);
-            this.Name = "Form2";
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+            this.Name = "AdaugaCheltuiala";
             this.Text = "Adaugare cheltuiala";
             this.Load += new System.EventHandler(this.Form2_Load);
             this.ResumeLayout(false);
