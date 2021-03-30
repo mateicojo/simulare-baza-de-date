@@ -1,5 +1,7 @@
+13,9,450,Factura
 7,7,400,alex
-12,12,212,avion
-6,6,600,bar
+12,12,300,avion
+3,2,433,factura
 2,2,200,factura
-6,6,1000,zuzu
+4,4,3000,majorat
+13,5,300,mancare

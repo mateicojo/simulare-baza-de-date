@@ -73,7 +73,7 @@ namespace proiect3
             dt.Columns.Add("Tip", Type.GetType("System.String"));
             for(int i = 0; i < nrCheltuieli; i++)
             {
-                dt.Rows.Add(i, cheltuieli[i].ziua, cheltuieli[i].luna, cheltuieli[i].suma, cheltuieli[i].tip);
+                dt.Rows.Add(i+1, cheltuieli[i].ziua, cheltuieli[i].luna, cheltuieli[i].suma, cheltuieli[i].tip);
             }
             dataGridView1.DataSource = dt;
         }
